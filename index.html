@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+  <meta
+  charset="“" utf-8”;
+  name="viewport" content="width=device-width, initial-scale=1"
+  />
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <title>Cooking Page</title>
+  <body class="flexbox-container-body">
+    <style>
+
+
+      .flexbox-container-body{
+        margin: 0px;
+      }
+
+      .VolkhovStyle {
+        font-family: Volkhov;
+        color: rgba(10, 24, 23, 1);
+        font-weight: 700;
+        margin: 0px; 
+      }
+
+      .VolkhovStyle.V1{
+        font-size: 64px;
+        line-height: 90px;
+      }
+
+      .VolkhovStyle.V2{
+        font-size: 38px; 
+
+      }
+
+      .VolkhovStyle.V3{
+        color: #ffffff;
+        font-size: 48px; 
+      }
+
+      .VolkhovStyle.V4{
+        font-weight: 400;
+        font-size: 28px; 
+        font-style: italic;
+      }
+
+
+      .RobotoStyle {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(143, 155, 179, 1);
+        margin: 0px;
+      }
+
+      .RobotoStyle.R1{
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .RobotoStyle.R2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #222b45;
+      }
+     
+
+      .InderStyle{
+        font-family: Inder;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        margin:0px
+      }
+  
+      .PoppinsStyle {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(10, 24, 23, 1);
+        margin: 0px;
+      }
+
+      .PoppinsStyle.P1{
+        font-size: 24px;
+      }
+
+      .PoppinsStyle.P2{
+        font-size: 24px;
+        color: rgb(225, 225, 225, 0.8);
+      }
+
+      .PoppinsStyle.P3{
+        font-weight: 500;
+        
+      }
+
+      .PoppinsStyle.P4{
+        font-weight: 500;
+        color: #ffffff;
+      }
+      
+
+      .button {
+        background-color: inherit;
+        padding: 16px;
+        text-align: center;
+        border-radius: 8px;
+        border-width: 1px;
+        border-color: rgba(233, 105, 81, 1);
+        border-style: solid;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+
+      .button:hover{
+        background-color: #d6d9df;
+        cursor: pointer;
+
+      }
+
+      .secondbutton {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #c5cee0;
+        padding: 16px 17px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        display: inline-flex;
+        justify-content: left;
+        width: 100%; 
+      }
+
+      .secondbutton:hover{
+        background-color: none;
+        cursor: text;
+      }
+
+      .thirdbutton {
+        padding: 16px;
+        background-color: rgba(59, 127, 121, 1);
+        border-style: solid;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        border-width: 0px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .thirdbutton:hover{
+        background-color: #0a423c;
+        cursor: pointer;
+      }
+
+      .fourthbutton {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-width: 0px;
+        background-color: rgba(233, 105, 81, 1);
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 16px;
+      }
+
+      .fourthbutton:hover{
+        background-color:rgb(197, 89, 70) ;
+        cursor: pointer;
+
+      }
+
+      .position{
+        display: flex;
+        flex-direction: row;
+        line-height: 32px;
+        margin-top: 48px
+      }
+
+
+      .flexbox-container-button-small-img-top{
+        width: 21px;
+        height: 21px;
+        padding: 8px;
+      }
+
+      .flexbox-container-button-small-img-bot{
+        width: 21px;
+        height: 21px;
+        padding: 8px;
+      }
+
+      .flexbox-container-header {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 150px;
+        margin-left: 150px;
+       
+      }
+
+      .flexbox-container-header-logo{
+        width: 80px; 
+        height: 80px; 
+        margin-top: 40px;
+      }
+
+
+      .flexbox-container-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 10px;
+        margin-left: 150px;
+      }
+
+
+      .flexbox-container-main-div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 87px;
+        margin-right: 90px;
+      }
+
+      .flexbox-container-aside {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 75px;
+       
+      }
+
+      .flexbox-container-aside-img-big{
+        width: 270px; 
+        height: 450px;
+      }
+
+
+      .flexbox-container-aside-div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+
+      }
+
+      .flexbox-container-aside-div-img-small{
+        width: 270px; 
+        height: 215px;
+      }
+
+
+      .flexbox-container-div {
+        display: flex; 
+        justify-content: center;
+        margin-top: 112px;
+        margin-bottom: 130px;
+        position: relative;
+        
+        
+        
+      }
+
+      .flexbox-container-aside-div-rect{
+        height: auto;
+        width: 100%;
+        max-width: 2560px;
+        
+      }
+
+      .flexbox-container-div-text {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        justify-content: center;
+        width: 100%;
+        top: 50%;
+        
+        
+      }
+
+      .flexbox-container-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 166px;
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-bottom: 166px;
+      }
+      
+
+      .flexbox-container-section1 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        row-gap: 80px;
+      }    
+
+
+      .flexbox-container-section2 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        row-gap: 80px;
+      }
+
+      .flexbox-container-section-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .flexbox-container-sectionimg {
+        display: flex;
+        justify-content: flex-start;
+        width: 560; 
+        height: 460;
+        border-top-left-radius: 80px; 
+        border-bottom-right-radius: 80px;
+      }
+
+      .flexbox-container-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #042c28;
+        
+      }
+
+
+      .flexbox-container-footer-line {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 60px;
+        width: 148px; 
+        height: 66px;
+      }
+
+      .flexbox-container-footer-div-and-img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 280px; 
+
+      }
+
+      .flexbox-container-footerdiv {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 150px;
+      }
+
+      .flexbox-container-footerimg {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 158px;
+        margin-top: 37px;
+        width: 240px; 
+        height: 240px;
+      }
+
+      .flexbox-container-small {
+        display: flex;
+        justify-content: center;
+        margin-top: 91px;
+        margin-bottom: 50px;
+      }
+
+
+      @media (max-width: 768px) { 
+        .VolkhovStyle.V1 {
+          font-size: 32px;
+          line-height: 50px;
+        }
+        .VolkhovStyle.V2{
+          font-size: 24px;
+        }
+        .VolkhovStyle.V3{
+          font-size: 24px;
+        }
+        .VolkhovStyle.V4{
+          font-size: 20px;
+        }
+        
+      }
+
+      @media (max-width: 768px) { 
+        .RobotoStyle{
+          font-size: 14px;
+        }
+        .RobotoStyle.R1{
+          font-size: 14px;
+          font-weight: 500;
+        }
+        .RobotoStyle.R2{
+          font-size: 14px; ;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .PoppinsStyle{
+          font-size: 14px;
+        }
+        .PoppinsStyle.P1{
+          font-size: 14px;
+        }
+        .PoppinsStyle.P2{
+          font-size: 12px;
+        }
+        .PoppinsStyle.P3{
+          font-size: 12px;
+          font-weight: 400;
+        }
+        .PoppinsStyle.P4{
+          font-size: 12px;
+          font-weight: 400;
+        }
+        }
+
+        @media (max-width: 768px) { 
+        .InderStyle{
+          font-size: 12px;
+        }
+      }
+
+      @media (max-width: 480px) { 
+        .button{
+        padding: 9px;
+         
+        } 
+      }
+
+      @media (max-width: 768px) { 
+        .secondbutton{
+          padding: 9px ;
+          border-width: 0.5px;
+
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .thirdbutton{
+          padding: 9.5px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .fourthbutton{
+          padding: 9px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .position{
+          display: flex;
+          flex-direction: row;
+          line-height: 20px;
+          margin-top: 14px;
+          align-items: center;
+          
+        }
+      }
+
+
+      @media (max-width: 768px) { 
+        .flexbox-container-button-small-img-top{
+          width: 14px;
+          height: 14px;
+          padding: 4px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-button-small-img-bot{
+          width: 0px;
+          height: 0px;
+          padding: 0px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-header{
+          display: flex;
+          margin-left: 20px;
+          margin-right: 20px;
+          justify-content: space-between;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-header-logo{
+          width: 45px;
+          height: 45px;
+          margin-top: 20px;
+        } 
+      }
+
+      @media (max-width: 480px) { 
+        .flexbox-container-main{
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          margin-right: 20px;
+          align-items: center;
+
+        } 
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-main-div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+        margin-right: 0px;
+        align-items: center;
+        text-align: center;
+        
+        } 
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-aside{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 40px;
+          gap: 10px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-aside-img-big{
+          width: 135px;
+          height: 225px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-aside-div{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 0px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-aside-div-img-small{
+          width: 135px;
+          height: 108px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-div{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        
+       }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-aside-div-rect{
+          width: 0px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-div-text{
+          position: relative;
+          gap: 20px;
+          flex-wrap: wrap;
+  
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-section{
+          row-gap: 66px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 66px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-section1{
+          row-gap: 40px;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-section2{
+          row-gap: 40px;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-section-text{
+          gap: 8px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-sectionimg{
+          width: 280px;
+          height: 230px;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-footer{
+          gap:8px;
+          align-items: center;  
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-footer-line{
+          margin-top: 0px;
+          width: 0px;
+          height: 0px;
+        }
+      }
+
+      @media (max-width: 480px) { 
+        .flexbox-container-footer-div-and-img{
+          flex-direction: column;
+          align-items: center;
+          gap: 0px;
+
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-footerdiv{
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 20px;
+          text-align: center;
+          gap: 8px;
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-footerimg{
+          margin-right: 0px;
+          margin-top: 0px;
+          width: 0px;
+          height: 0px;
+          
+        }
+      }
+
+      @media (max-width: 768px) { 
+        .flexbox-container-small{
+          margin-top: 60px;
+          margin-bottom: 20px;
+        }
+      }
+
+
+      
+
+    </style>
+
+    <header class="flexbox-container-header">
+      <img class="flexbox-container-header-logo"
+        src="file:///Users/Tanya/Documents/Projects/Logo.svg"
+        alt="logo"
+      />
+         <div class="position">
+        <button class="button button:hover PoppinsStyle P3">
+          <img class="flexbox-container-button-small-img-top"
+            src="file:///Users/Tanya/Documents/Projects/usergroup.svg"
+            alt="icon"
+          /> 
+          Join chef's community
+        </button>
+      </div>
+    </header>
+
+    <main class="flexbox-container-main">
+      <div class="flexbox-container-main-div">
+        <h1
+          class="VolkhovStyle V1"
+          
+        >
+          Find authentic<br />
+          professional chefs<br />
+          in Australia
+        </h1>
+
+        <p
+          class="PoppinsStyle P1"
+        >
+          We're bulding a community of passion<br />
+          professionals to cook for you at your own home.
+        </p>
+
+        <div class="position">
+          <input
+            class="secondbutton RobotoStyle"
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <button class="thirdbutton RobotoStyle R1"><nobr>Join the waitlist</nobr></button>
+        </div>
+      </div>
+
+      <aside class="flexbox-container-aside">
+        <img class="flexbox-container-aside-img-big"
+          src=" file:///Users/Tanya/Documents/Projects/Rectangle%20632.png"
+          alt=" chef "
+          
+        />
+        <div class="flexbox-container-aside-div">
+          <img class="flexbox-container-aside-div-img-small"
+            src="file:///Users/Tanya/Documents/Projects/Rectangle%20637.png"
+            alt=" chef "
+            
+          />
+          <img class="flexbox-container-aside-div-img-small"
+            src="file:///Users/Tanya/Documents/Projects/Rectangle%20638.png"
+            alt=" chef "
+            
+          />
+        </div>
+      </aside>
+    </main>
+    <div class="flexbox-container-div">
+      <div class="flexbox-container-div-text RobotoStyle R2">
+        <div>🥂 Date nights</div>
+        <div>❤️ Family gatherings</div>
+        <div>🏡 House warming party</div>
+        <div>🎂 Birthdays</div>
+        <div>🎁 Kids partie</div>
+      </div>
+      <img class="flexbox-container-aside-div-rect"
+        
+      src="file:///Users/Tanya/Documents/Projects/Rectangle%20594.svg"
+      alt="rectangle"
+    />
+    </div>
+
+    <section class="flexbox-container-section">
+      <div class="flexbox-container-section1">
+        <div class="flexbox-container-section-text">
+          <p
+            class="VolkhovStyle V4"
+          >
+            STEP 1
+          </p>
+
+          <h2 class="VolkhovStyle V2">
+            Find a professional chef
+          </h2>
+
+          <p class="PoppinsStyle">
+            Connect with a world-class chefs.
+          </p>
+        </div>
+        <img
+          class="flexbox-container-sectionimg"
+          src="file:///Users/Tanya/Documents/Projects/unsplash_L7EwHkq1B1s.png"
+          alt="women cooking"
+          
+        />
+      </div>
+
+      <div class="flexbox-container-section2">
+        <div class="flexbox-container-section-text">
+          <p
+            class="VolkhovStyle V4"
+          >
+            STEP 2
+          </p>
+
+          <h2 class="VolkhovStyle V2">
+            Personalised dining<br />
+            experience at your home
+          </h2>
+
+          <p class="PoppinsStyle ">
+            Enjoy restaurant quality dinner or lunch with your loved
+            one, family or friends at your own home.
+          </p>
+        </div>
+        <img
+          class="flexbox-container-sectionimg"
+          src="file:///Users/Tanya/Documents/Projects/unsplash_L7EwHkq1B2s.png"
+          alt="food"
+          
+        />
+      </div>
+    </section>
+
+    <footer class="flexbox-container-footer">
+      <img
+        class="flexbox-container-footer-line"
+        src="file:///Users/Tanya/Documents/Projects/Group%201000000783.svg"
+        alt="curly line"
+        
+      />
+
+      <div class="flexbox-container-footer-div-and-img">
+        <div class="flexbox-container-footerdiv">
+          <h1
+            class="VolkhovStyle V3"
+    
+          >
+            Join chef's community
+          </h1>
+
+          <p
+            class="PoppinsStyle P2"
+           
+          >
+            If you’re a proffesional chef join our world-class
+            community to showcase your amazing skills and
+            connect with customers within Australia.
+          </p>
+
+          <div class="position">
+            <input
+              class="secondbutton RobotoStyle"
+              type="text"
+              placeholder="Enter your email address"
+            />
+
+            <button class="fourthbutton ">
+              <img class="flexbox-container-button-small-img-bot"
+                src="file:///Users/Tanya/Documents/Projects/usergroupwhite.svg"
+                alt="icon"
+              />
+              <nobr class="PoppinsStyle P4"> Join community</nobr>
+            </button>
+          </div>
+        </div>
+
+        <img
+          class="flexbox-container-footerimg"
+          src="file:///Users/Tanya/Documents/Projects/Illustration.svg"
+          alt="envelope"
+        />
+      </div>
+
+      <small class="InderStyle flexbox-container-small">
+        ©2022 Your chef. All rights reserved
+      </small>
+    </footer>
+  </body>
+</html>
